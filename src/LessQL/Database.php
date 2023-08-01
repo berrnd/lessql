@@ -18,6 +18,8 @@ class Database
         $pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
         $this->pdo = $pdo;
     }
+	
+	private $pdo;
 
     /**
      * Returns a result for table $name.
